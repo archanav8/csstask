@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+	<title>survey form</title>
+    <style>
+        body{
+	background: rgb(61, 198, 244);
+	background-size: auto;
+	margin:0;
+	padding:0;
+}
+#title h1{
+	font-family: Red Hat Display;
+	font-style: bold;
+	font-size:35px;
+	text-align: center;
+
+}
+#main{
+	display: block;
+	margin:40px 0px 20px 300px;
+	padding: 25px 25px 25px 40px;
+	background:white;
+	height:200%;
+    width:60%;
+    border-radius:5px;
+}
+#description{
+	font-family: 'Mukta', sans-serif;
+	font-size:18px;
+	margin-left:28%;
+    opacity:0.8;
+}
+#survey-form{
+	font-family: 'Old Standard TT', serif;
+	line-height:40px;
+	font-size:17px;
+	text-align:center;
+}
+#fname #name{
+   width:280px;
+   padding:5px;
+   margin:10px;
+   border: 1px solid grey ;
+   border-radius: 2px;
+}
+#emails #email{
+   width:280px;
+   padding:5px;
+   margin:10px;
+   border: 1px solid grey ;
+   border-radius: 2px;
+}
+#aged #number{
+   width:280px;
+   padding:5px;
+   margin:10px;
+   border: 1px solid grey ;
+   border-radius: 2px;
+}
+#Roles #dropdown{
+   width:140px;
+   padding:5px;
+   margin:10px;
+   border: 1px solid grey ;
+   border-radius: 2px;  
+}
+#Choice ul{
+  list-style:none; 
+  display:inline-block; 
+  text-align: left; 
+  vertical-align:top; 
+  margin:3px;
+}
+#Most #dropdown{
+   width:140px;
+   padding:5px;
+   margin:10px;
+   border: 1px solid grey ;
+   border-radius: 2px;
+}
+#improved ul{
+  list-style:none; 
+  display:inline-block; 
+  text-align: left; 
+  vertical-align:top; 
+  margin:3px;
+}
+#submit{
+	width:100px;
+	padding:10px;
+    margin:10px;
+	background:#59ACE0;
+	border:0px;
+	border-radius:5px;
+	font-size:16px;
+	color:white;
+}
+#comments #area{
+	margin:12px;
+	vertical-align:top;
+	height:70px;
+	width:340px;
+	resize:vertical;
+}
+        
+
+
+    </style>
+	
+</head>
+<body>
+<div id="title">
+  <h1>Survey Form</h1>
+</div>
+
+
+<div id="main">
+  <p id="description">Let us know how we can improve freeCodeCamp</p>
+  
+ <form id="survey-form" method="get" action="https://crossorigin.me/https://freecodecamp.com">
+<div id="fname">
+  <label id="name-label" for="name">*Name:</label>
+  <input type="name" autofocus id="name" placeholder="Enter your name" required>
+</div>
+<div id="emails">
+  <label id="email-label" for="email">*Email:</label>
+  <input type="email" autofocus id="email" placeholder="Enter your name" required>
+</div>
+<div id="aged">
+  <label id="number-label" for="age">*Age:</label>
+  <input type="number" id="number" placeholder="Age" autofocus>
+</div>
+<div id="Roles">
+  <label id="role" for="role">Which option best describes your current role:</label>
+  <select name="status" id="dropdown">
+  	<option disabled value>Select an option</option>
+  	<option>Student</option>
+  	<option>Full Time Job</option>
+  	<option>Full Time Learner</option>
+  	<option>Prefer not to say</option>
+  	<option>Other</option>
+  </select>
+</div>
+<div id="Choice">
+<label for="choice" id="chose">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+<ul>
+<li><input type="radio" id="choose" name="choice">Definitely</li>
+<li><input type="radio" id="choose" name="choice">Maybe</li>
+<li><input type="radio" id="choose" name="choice">Not sure</li>
+</ul>
+</div>
+<div id="Most">
+<label for="like">What do you like most in FCC:</label>
+<select name="status" id="dropdown">
+  	<option disabled value>Select an option</option>
+  	<option>Challenges</option>
+  	<option>Projects</option>
+  	<option>Community</option>
+  	<option>Open Source</option>
+  </select>
+</div>
+
+<div id="improved">
+<label>Things that should be improved in the future (Check all that apply):</label>
+<ul>
+<li><input type="checkbox" value="improve">Front-end Projects</li>
+<li><input type="checkbox" value="improve">Back-end Projects</li>
+<li><input type="checkbox" value="improve">Data visualization</li>
+
+</div>
+</ul>
+
+</form>
+</div>
+</body>
+</html>
+	
